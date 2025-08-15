@@ -1,10 +1,5 @@
-# Compiled binaries
-dwm
 *.o
-
-# Build artifacts
-*.orig
-*.rej
-
-# Backup files
-*~
+dwm
+dwm-msg
+config.h
+patches.h
