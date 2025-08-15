@@ -1,0 +1,10 @@
+# Compiled binaries
+dwm
+*.o
+
+# Build artifacts
+*.orig
+*.rej
+
+# Backup files
+*~
