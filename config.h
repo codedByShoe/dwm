@@ -563,7 +563,7 @@ static const char *dmenucmd[] = {
     NULL};
 
 static const char *termcmd[] = {"st", NULL};
-static const char *browsercmd[] = {"firefox", NULL};
+static const char *browsercmd[] = {"brave", NULL};
 
 /* Commands for volume and brightness */
 /* volume up / down / mute + ping dwmblocks */
@@ -617,6 +617,10 @@ static const Key keys[] = {
     {MODKEY, XK_space, spawn, {.v = dmenucmd}},
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
     {MODKEY, XK_b, spawn, {.v = browsercmd}},
+    {MODKEY, XK_x, spawn, SHCMD("brave --app=https://x.com")},
+    {MODKEY, XK_g, spawn, SHCMD("brave --app=https://github.com")},
+    {MODKEY, XK_a, spawn, SHCMD("brave --app=https://grok.com")},
+    {MODKEY, XK_y, spawn, SHCMD("brave --app=https://youtube.com")},
     {MODKEY | ShiftMask, XK_b, togglebar, {0}},
 #if TOGGLETOPBAR_PATCH
     {MODKEY | ShiftMask, XK_b, toggletopbar, {0}},
